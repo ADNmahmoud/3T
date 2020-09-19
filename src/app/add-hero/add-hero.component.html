@@ -1,0 +1,12 @@
+<form #formumaire="ngForm">
+
+  <label for="id">id</label>
+  <input required min="0" max="10000" id="id" type="number" ngModel name="id" class="form-control">
+
+  <label for="name">Name</label>
+  <input required id="name" type="text" ngModel name="name" class="form-control">
+
+
+  <button
+  class="btn btn-primary" (click)="addHero(formumaire)">Save</button>
+</form>
